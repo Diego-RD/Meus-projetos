@@ -26,6 +26,7 @@ while True:
     else:
         print("Operador incoreto!")
 
+# oie
       
 
     
