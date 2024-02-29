@@ -1,13 +1,14 @@
 
 while True:
     valor1 = float(input("Digite um numero: "))
-    operador = input("Digite um operador: ")
+    operador = input("Digite um operador: ").lower()
     valor2 = float(input("Digite o segundo numero?: "))
-    validar = ['+','-','*','/']
+    validar = ['+','-','*','/','soma']
+    pergunta = ['sim','s']
 
     if operador in validar:
     
-        if operador == '+':
+        if operador == '+' or operador == 'soma':
             resultado = valor1 + valor2
             print(f"O Resultado da soma é: {resultado} ")
         elif operador == '-':
@@ -19,14 +20,14 @@ while True:
         elif operador == '/':
             resultado = valor1 / valor2
             print(f"O Resultado da divisao é: {resultado} ")
+
         parada = input("gostaria de fazer outra conta sim ou nao ?:  ").lower()
 
-        if parada != 'sim':
+        if parada not in pergunta:
             break
     else:
         print("Operador incoreto!")
 
-# oie
       
 
     
